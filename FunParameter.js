@@ -1,3 +1,5 @@
+// function parameter
+
 // first function
 
 function name() {

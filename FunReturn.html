@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuncReturn</title>
+</head>
+
+<body>
+
+    <h2
+        style="text-align: center; font-family: Georgia, serif; color: cadetblue; background-color: beige; padding: 35px; ">
+        Function
+        Return and Call</h2>
+    <div class="input" style="text-align: center; padding: 10px;">
+        <input type="text" id="num1" placeholder="Enter First Number">
+        <input type="text" id="num2" placeholder="Enter Second Number">
+
+        <button id="result"> Calculate</button>
+
+    </div>
+    <script>
+
+        function addnum(a, b) {
+            return a + b;
+
+        }
+
+        function subnum(a, b) {
+            return a - b;
+        }
+
+        function result() {
+            var n1 = Number(document.getElementById('num1').value);
+            var n2 = Number(document.getElementById('num2').value);
+
+            var sum = addnum(n1, n2);
+            var sub = subnum(n1, n2);
+
+            console.log(sum);
+            console.log(sub);
+
+
+        }
+
+        document.getElementById('calculate').addEventListener('click', result);
+
+    </script>
+</body>
+
+</html>
