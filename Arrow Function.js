@@ -1,3 +1,4 @@
+// Day 1 JavaScript
 // Arrow Function Example 1
 
 console.log("hello javascript")
