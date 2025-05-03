@@ -1,3 +1,5 @@
+// Day 2 of JavaScript
+
 // function parameter
 
 // first function
