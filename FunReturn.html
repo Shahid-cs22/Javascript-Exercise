@@ -33,21 +33,28 @@
             return a - b;
         }
 
-        function result() {
-            var n1 = Number(document.getElementById('num1').value);
-            var n2 = Number(document.getElementById('num2').value);
+        // function result() {
+        //     var n1 = Number(document.getElementById('num1').value);
+        //     var n2 = Number(document.getElementById('num2').value);
 
-            var sum = addnum(n1, n2);
-            var sub = subnum(n1, n2);
+        //     var sum = addnum(n1, n2);
+        //     var sub = subnum(n1, n2);
 
-            console.log(sum);
-            console.log(sub);
+        //     console.log(sum);
+        //     console.log(sub);
 
 
+        // }
+
+        // document.getElementById('calculate').addEventListener('click', result);
+
+
+        let username = "";
+
+        while (username === "") {
+            username = window.prompt("Enter Your Name");
         }
-
-        document.getElementById('calculate').addEventListener('click', result);
-
+        console.log(`welcome ${username}`);
     </script>
 </body>
 
