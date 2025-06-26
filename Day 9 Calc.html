@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    var doADD = () => {
+        var num1 = document.getElementById("ip1").value;
+        var num2 = document.getElementById("ip2").value;
+
+        var result = Number(num1) + Number(num2);
+        document.getElementById("res").innerHTML = result;
+        document.getElementById("nn").value=result;
+    };
+
+    var doSub = () => {
+        var num1 = document.getElementById("ip1").value;
+        var num2 = document.getElementById("ip2").value;
+        var result = Number(num1) - Number(num2);
+        document.getElementById("res").innerHTML = result;
+        document.getElementById("nn").value=result;
+
+    };
+
+    var doMul = () => {
+        var num1 = document.getElementById("ip1").value;
+        var num2 = document.getElementById("ip2").value;
+        var result = Number(num1) * Number(num2);
+        document.getElementById("res").innerHTML = result;
+        document.getElementById("nn").value=result;
+    };
+
+    var doDiv = () => {
+        var num1 = document.getElementById("ip1").value;
+        var num2 = document.getElementById("ip2").value;
+        var result = Number(num1) / Number(num2);
+        document.getElementById("res").innerHTML = result;
+        document.getElementById("nn").value=result;
+    }
+
+</script>
+
+<body>
+    Number 1: <input type="text" id="ip1"><br><br>
+    Number 2: <input type="text" id="ip2"><br><br>
+
+    <input type="button" value="Add" onclick="doADD()">&nbsp;
+    <input type="button" value="Sub" onclick="doSub()">&nbsp;
+    <input type="button" value="Mul" onclick="doMul()">&nbsp;
+    <input type="button" value="Div" onclick="doDiv()">&nbsp;
+    <br><br>
+    Result: <span id="res"></span>  <br> <br>
+
+    Result: <input type="text" id="nn">
+</body>
+
+</html>
