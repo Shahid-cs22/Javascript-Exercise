@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    function doCalc(op) {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+
+        var result;
+
+        if (op == "add") {
+            result = Number(num1) + Number(num2);
+
+        }
+        else if (op == "sub") {
+
+            result = num1 - num2;
+
+        }
+        else if (op == "mul") {
+
+            result = num1 * num2;
+
+        }
+        else if (op == "div") {
+
+            result = num1 / num2;
+
+        }
+
+        document.getElementById("res").innerHTML = result;
+    }
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+
+    Number 1: <input type="number" id="num1"><br><br>
+    Number 2: <input type="number" id="num2"><br><br>
+
+    <input type="button" value="Add" onclick="doCalc('add')"> &nbsp;
+    <input type="button" value="Sub" onclick="doCalc('sub')"> &nbsp;
+    <input type="button" value="Mul" onclick="doCalc('mul')"> &nbsp;
+    <input type="button" value="Div" onclick="doCalc( 'div')"> &nbsp; <br><br>
+
+    Result: <span id="res"> </span>
+
+
+
+</body>
+
+</html>
