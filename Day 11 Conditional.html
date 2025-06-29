@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function doCalc(op) {
+        var num1 = Number(document.getElementById("ip1").value);
+        var num2 = Number(document.getElementById("ip2").value);
+        var result;
+
+
+
+
+
+        switch (op) {
+            case 'add':
+                result = num1 + num2;
+                break;
+
+            case 'sub':
+                result = num1 - num2;
+                break;
+
+            case 'mul':
+                result = num1 * num2;
+                break;
+
+            case 'div':
+                result = num1 / num2;
+                break;
+
+            default:
+                result = "somthing is wrong";
+
+
+        }
+
+        document.getElementById("res").innerHTML = result;
+    }
+
+
+
+
+
+</script>
+
+<body>
+    <h1>Simple Calculator</h1>
+    Number 1: <input type="number" id="ip1"><br><br>
+    Number 2: <input type="number" id="ip2"><br><br>
+
+
+    <input type="button" value="Add" onclick="doCalc('add')">&nbsp;
+    <input type="button" value="Sub" onclick="doCalc('sub')">&nbsp;
+    <input type="button" value="Mul" onclick="doCalc('mul')">&nbsp;
+    <input type="button" value="Div" onclick="doCalc('div')">&nbsp;
+    <br><br>
+    Result: <span id="res"></span>
+</body>
+
+</html>
