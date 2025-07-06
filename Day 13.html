@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom In and Zoom Out</title>
+    <script>
+        function doZoom() {
+
+            var img = document.getElementById("myimg");
+            var eHeight = img.style.height;
+            var eWidth = img.style.width;
+
+            var nHeight = parseInt(eHeight) + 50 + "px";
+            var nWidth = parseInt(eWidth) + 50 + "px";
+
+            img.style.height = nHeight;
+            img.style.width = nWidth;
+
+        }
+
+        function doZoomOut() {
+            var img = document.getElementById("myimg");
+            var eHeight = img.style.height;
+            var eWidth = img.style.width;
+
+            var nHeight = parseInt(eHeight) - 50 + "px";
+            var nWidth = parseInt(eWidth) - 50 + "px";
+            img.style.height = nHeight;
+            img.style.width = nWidth;
+        }
+    </script>
+</head>
+
+<body>
+    <img src="./image/img1.jpeg" id="myimg" alt="" style="height: 250px; width: 300px;"> <br><br>
+
+    <button onclick="doZoom()">Zoom in</button> &nbsp;
+    <button onclick="doZoomOut()">Zoom out</button>
+</body>
+
+</html>
